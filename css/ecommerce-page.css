@@ -18,12 +18,17 @@ body {
 
 header {
   background-color: #121216;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 header,
 section {
   padding: 20px 30px;
   color: white;
+    align-items: flex-start;
+  justify-content: flex-start;
 }
 
 section {
@@ -37,9 +42,17 @@ section {
 }
 
 .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap:20px
 }
 
 .logo-search {
+   display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 15px;
 }
 
 .logo {
@@ -54,6 +67,10 @@ section {
   background: #1f1f27;
   padding: 10px 20px;
   border-radius: 20px;
+  display: flex;
+flex-direction: row;
+  align-items: center;
+
 }
 
 .search-bar input {
@@ -64,19 +81,30 @@ section {
   color: #8d8ba5;
   font-size: 16px;
   padding: 4px 0;
+    display: flex;
+  flex-wrap: wrap;
 }
 
 .search-bar i {
   color: #8d8ba5;
+  display: flex;
+  align-items: center;
 }
 
 .options {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
 .option {
   min-width: 60px;
   text-transform: capitalize;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
 }
 
 .option i {
@@ -87,6 +115,9 @@ section {
 .categories {
   background-color: #2b2d36;
   padding-top: 20px;
+  display: flex;
+    align-items: center;
+  justify-content: center;
 }
 
 .category {
@@ -111,6 +142,8 @@ section {
 }
 
 .view-options {
+  display: flex;
+  gap: 10px;
 }
 
 i.fa-th-list {
@@ -120,6 +153,9 @@ i.fa-th-list {
 .section-control {
   padding-bottom: 20px;
   border-bottom: 1px solid #8d8ba5;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .section-control .view-option {
@@ -127,6 +163,9 @@ i.fa-th-list {
   height: 40px;
   border: 1px solid #8d8ba5;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .products {
@@ -158,6 +197,7 @@ i.fa-th-list {
 .product-price {
   padding: 6px 12px;
   height: max-content;
+  display: flex;
 }
 
 .product-price:before {
@@ -182,6 +222,9 @@ i.fa-th-list {
 /* GRID VIEW STYLES */
 
 .grid.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .grid .product {
@@ -195,62 +238,107 @@ i.fa-th-list {
 
 .grid .product-data {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .grid .product-info {
   text-align: center;
   padding: 0 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 200px;
 }
 
 .grid .product-action {
   padding-top: 30px;
   border-top: 1px solid #8d8ba5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* LINE VIEW STYLES */
 
 .lines.products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .lines .product {
   padding: 20px;
+  display: flex;
 }
 
 .lines .product-image-wrapper {
   min-width: 300px;
-  height: 200px;
+  height: 200px;;
 }
 
 .lines .product-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-left: 10px;
 }
 
 .lines .product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+  padding: 10px;
 }
 
 .lines .product-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* LINES-ACTION VIEW */
 
 .lines-action.products {
+    display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .lines-action .product {
+  display: flex;
 }
 
 .lines-action .product-image-wrapper {
   min-width: 300px;
   height: 200px;
+  display: flex;
 }
 
 .lines-action .product-data {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .lines-action .product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
 }
 
 .lines-action .product-action {
   border-left: 1px solid #8d8ba5;
   padding-left: 30px;
   min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
